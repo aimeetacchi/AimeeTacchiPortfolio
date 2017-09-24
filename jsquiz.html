@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects - My Doctor Who quiz | Aimee Tacchi</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="Front-end developer">
+<meta name="keywords" content="Web desgin, front-end developer, bedfordshire, hertfordshire, buckinghamshire">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700" rel="stylesheet">
+    
+<link href='dist/css/application.css' rel='stylesheet'>
+
+</head>
+<body>
+	
+
+<div class="burger-container">
+	<div class="logo">
+		<h1><a href="/">>_ Aimee Tacchi</a></h1>
+	</div>
+
+	<div class="burger-menu">
+		<div class="menubar"></div>
+	</div>
+</div>
+
+<header>
+	<div class="social-media">
+		<a href="http://www.github.com/darkxangel84" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		<a href="http://codepen.io/darkxangel84/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/in/aimeetacchi/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/AimeesWebDesign/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	</div>
+
+	<div class="contact">
+		<a href="mailto:aimeetacchi@hotmail.co.uk?Subject=Hello" target="_top">Email me: <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+	</div>
+	
+</header>
+
+	<nav>
+		<ul class="nav-itemsMobile">
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+		</ul>
+		<ul class="nav-items">
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+		</ul>
+	</nav>
+</div>
+
+
+  
+
+<div class="border"></div>
+<div class="content-container">
+	<h1>Doctor Who quiz Made in JS</h1>
+	<div class="questions-container">
+		<p>I see you have stumbled across my Doctor Who quiz.</p>
+		<p> Why not have a go and see how much you know about the show!</p>
+		<label for="question1">Question 1: Who plays the 10th Doctor in Doctor Who?</label>
+		<input id="question1" type="text" name="questionOne" class="questions">
+		<br>
+		<label for="question2">Question 2: What color is the Tardis?</label>
+		<input id="question2" type="text" name="questionTwo" class="questions">
+		<br>
+		<label for="question3">Question 3: Who does Billie Piper play?</label>
+		<input id="question3" type="text" name="questionThree" class="questions">
+		<br>
+		<label for="question4">Question 4: Who want to exterminate the Doctor?</label>
+		<input id="question4" type="text" name="questionFour" class="questions">
+		<br>
+		<label for="question5">Question 5: What is the Metal dog who's a friend of the Doctors called?</label>
+		<input id="question5" type="text" name="questionFive" class="questions">
+		<button type="button" class="submitbtn">Submit Answers!</button>
+		</div>
+		<div class="score"></div>
+
+	
+	<p>Skills: HTML, CSS, Javascript</p>
+	<p>To see the code please visit my <a href="https://github.com/darkxangel84/MyQuizs/blob/master/js/app.js" target="_blank"><strong>Github</strong></a></p>
+	<a href="projects.html" class="playagain">Go back</a>
+</div>
+  <footer>
+   <p>Web site designed and developed by Aimee Tacchi &copy; 2017 All rights reserved</p>
+</footer>
+	<!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+	<script>
+		$(".burger-menu").click(function(){
+				$(this).toggleClass('active');
+			 	$(".nav-itemsMobile").toggle();
+
+		});
+
+		//Scroll smooth on a tag links.
+		 $('.scrolltoRW').click(function () {
+              var aTag = $(this).attr('href');
+              $('html,body').animate({
+                  scrollTop: $(aTag).offset().top
+              }, 600);
+              return false;
+          });
+
+		 <!-- FIXED HEADER ON SCROLL -->
+		window.onscroll = function fixHeaderOnScroll() {
+			
+	    	if (document.body.scrollTop > 200 ) {
+	    		$('.burger-container').css('box-shadow', '0 1px 3px #EEEEEE');
+
+		    } else {
+		    	$('.burger-container').css('box-shadow','none');
+		    }
+		}
+
+	</script>
+
+	<!-- JS CODE -->      
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

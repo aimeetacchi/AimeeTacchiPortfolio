@@ -1,0 +1,38 @@
+<footer>
+   <p>Web site designed and developed by Aimee Tacchi &copy; 2017 All rights reserved</p>
+</footer>
+	<!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+	<script>
+		$(".burger-menu").click(function(){
+				$(this).toggleClass('active');
+			 	$(".nav-itemsMobile").toggle();
+		});
+
+		//Scroll smooth on a tag links.
+		 $('.scrolltoRW').click(function () {
+              var aTag = $(this).attr('href');
+              $('html,body').animate({
+                  scrollTop: $(aTag).offset().top
+              }, 600);
+              return false;
+          });
+
+		 <!-- FIXED HEADER ON SCROLL -->
+		window.onscroll = function fixHeaderOnScroll() {
+			
+	    	if (document.body.scrollTop > 200 ) {
+	    		$('.burger-container').css('box-shadow', '0 1px 3px #EEEEEE');
+
+		    } else {
+		    	$('.burger-container').css('box-shadow','none');
+		    }
+		}
+
+	</script>
+
+	<!-- JS CODE -->      
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

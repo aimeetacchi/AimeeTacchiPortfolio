@@ -1,0 +1,52 @@
+hr {
+	background-color: $colorset2;
+	width: 25%;
+	height: 10px;
+	margin: 0;
+	border: none;
+}
+
+/* -- MARGINS --- */
+
+.margin-bottom-none {
+	margin-bottom: 0;
+}
+.margin-top-none {
+	margin-top: 0;
+}
+.margin-top-sm {
+	margin-top: .3em;
+}
+.margin-bottom-sm {
+	margin-bottom: .3em;
+}
+.margin-top-lg {
+	margin-top: .6em;
+}
+.margin-bottom-lg {
+	margin-top: .6em;
+}
+
+/* alignment */
+.center {
+	text-align: center;
+}
+
+/* -- BORDER -- */
+
+.border { 
+	border: 10px solid $colorset2; 
+}
+
+/* ---- Flex container --- */
+/* TABLET CODE  768px */
+.flex {
+		display:flex;
+		flex-direction: column-reverse;
+	}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.flex {
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,28 @@
+/* -- Grow Div -- */
+.size-container {
+	background-color: #efefef;
+
+	.size {
+	  background-color: navy;
+	  width: 0;
+	  height: 100px;
+	  margin: 5% 0;
+	  transition: all ease 1.5s;
+	}
+}
+
+.grow-shrinkbtn {
+	border:3px solid $dark;
+	outline: none;
+	background-color: $light;
+	width: 33%;
+	text-align: center;
+	padding: 1em;
+    margin: 0 auto;
+    transition: all .5s ease-out;
+
+    &:hover {
+    border-color: $colorset1;
+	background-color: $colorset1;
+    }
+}
