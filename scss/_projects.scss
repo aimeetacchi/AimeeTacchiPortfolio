@@ -5,6 +5,11 @@
 	background-size: cover;
 	background-position: center;
 	height: 15em;
+
+	/* DESKTOP CODE  768px */
+		@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 60px;
+		}
 }
 
 .project-image {
@@ -75,6 +80,13 @@
 
 .questions-container {
 		text-align: center;
+		@media screen and (min-width: $breakpoint-tablet) {
+			margin-top: 4em;
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 80px;
+		}
 	label {
 		
 		display: block;
@@ -94,6 +106,16 @@
 	padding: 3em 1em;
 	text-align: center;
 	margin: 1em auto;
+	
+	@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 80px;
+		}
+		
+	h2 {
+		color: $light;
+	}
+
+	
 }
 
 .submitbtn, {

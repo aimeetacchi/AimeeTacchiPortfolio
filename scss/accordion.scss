@@ -1,0 +1,44 @@
+.faq {
+	color: white;
+	padding: 2em;
+
+	/* ==== DESKTOP CODE  860px ===== */
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 60px;
+	}
+
+}
+
+.question {
+	position: relative;
+	background-color: #004A7C;
+	padding: 1em 2em;
+	cursor: pointer;
+	index-z: 2;
+	border: 1px solid #FAFAFA;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	margin-top:1em;
+}
+
+.answer {
+	background-color: #E8F1F5;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	color: black;
+	padding: 0em 2em;
+	transition: all .2s ease-out;
+	height:0;
+	opacity: 0;
+	
+	p {
+		padding: 0;
+	}
+}
+
+.answerDrop {
+	padding: .5em 2em;
+	height: auto;
+	opacity: 1;
+}

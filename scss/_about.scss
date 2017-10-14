@@ -4,6 +4,12 @@
 	background-size: cover;
 	border-bottom: 5px solid $colorset2;
 	height: 19em;
+
+		/* DESKTOP CODE  768px */
+		@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 60px;
+		}
+
 }
 
 .profile-container {

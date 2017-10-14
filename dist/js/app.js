@@ -89,6 +89,35 @@ if (listenTwo) {
   });
 }
 
+// Shopping List jQuery Script
+
+$('#addBtn').on('click', function(){
+    $('#addBtn').text('loading...')
+    setTimeout(function(){
+      $('#addBtn').hide();
+      $('form').show();
+    }, 200); 
+  });
+  
+  $('#addtolistBtn').on('click', function(e){
+    e.preventDefault();
+    $('.shoppingList p').hide();
+  var item = $('input').val();
+    if(item != '') {
+    $('.shoppingList').append('<li>' + item +'</li>');
+    $('#itemInput').val('');
+    }
+  });
+
+  // Accordion Script 
+
+  $('.question').on('click', function(){
+  $(this).next().toggleClass('answerDrop');
+  
+  if($(this).next().hasClass('answerDrop')){
+  $(this).next().siblings().removeClass('answerDrop');    }
+});
+
  
 
   

@@ -3,7 +3,7 @@
 <head>
 <title>Projects - My Growing Div | Aimee Tacchi</title>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<meta name="description" content="Front-end developer">
+<meta name="description" content="I'm Aimee a Front-end developer from Dunstable, Bedfordshire, UK. Do you need a beautiful stylish responsive website? Then you have come to the right place.">
 <meta name="keywords" content="Web desgin, front-end developer, bedfordshire, hertfordshire, buckinghamshire">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -29,7 +29,6 @@
 		<div class="menubar"></div>
 	</div>
 </div>
-
 <header>
 	<div class="social-media">
 		<a href="http://www.github.com/darkxangel84" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -54,24 +53,25 @@
 			<li><a href="/projects.html">Projects</a></li>
 		</ul>
 	</nav>
-</div>
+
 
 
   
 
-<div class="border"></div>
 <div class="content-container">
 	<div class="size-container">
 		<div id="growme" class="size"></div>
 	</div>
-	<h1>An expanding &amp; shrinking bar</h1>
+	<h1  class="center">An expanding &amp; shrinking bar</h1>
 	<div class="center">
 	<button class="grow-shrinkbtn" id="myButton"><strong>Grow</strong></button>
 	<button class="grow-shrinkbtn" id="myButtonTwo"><strong>Shrink</strong></button>
 	</div>
-	<p>This is one of my first JS projects I decided to make. It's just something small and fun.</p>
-	<p>Skills: HTML, CSS, Javascript</p>
-	<p>To see the code please visit my <a href="https://github.com/darkxangel84/Javascript/blob/master/Expanding_Div_With_JS/js/app.js" target="_blank"><strong>Github</strong></a></p>
+	<div class="center">
+		<p>This is one of my first JS projects I decided to make. It's just something small and fun.</p>
+		<p>Skills: HTML, CSS, Javascript</p>
+		<p>To see the code please visit my <a href="https://github.com/darkxangel84/Javascript/blob/master/Expanding_Div_With_JS/js/app.js" target="_blank"><strong>Github</strong></a></p>
+	</div>
 </div>
   <footer>
    <p>Web site designed and developed by Aimee Tacchi &copy; 2017 All rights reserved</p>
@@ -83,7 +83,6 @@
 		$(".burger-menu").click(function(){
 				$(this).toggleClass('active');
 			 	$(".nav-itemsMobile").toggle();
-
 		});
 
 		//Scroll smooth on a tag links.
@@ -96,15 +95,15 @@
           });
 
 		 <!-- FIXED HEADER ON SCROLL -->
-		window.onscroll = function fixHeaderOnScroll() {
-			
-	    	if (document.body.scrollTop > 200 ) {
-	    		$('.burger-container').css('box-shadow', '0 1px 3px #EEEEEE');
+		$(window).scroll(function fixHeaderOnScroll() {
+			var scroll = $(window).scrollTop();
+	    	if (scroll > 200 ) {
+	    		$('.burger-container').addClass('active');
 
 		    } else {
-		    	$('.burger-container').css('box-shadow','none');
+		    	$('.burger-container').removeClass('active');
 		    }
-		}
+		});
 
 	</script>
 

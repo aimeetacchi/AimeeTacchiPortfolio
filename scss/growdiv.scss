@@ -2,8 +2,12 @@
 .size-container {
 	background-color: #efefef;
 
+	@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 80px;
+	}
+
 	.size {
-	  background-color: navy;
+	  background-color: rebeccapurple;
 	  width: 0;
 	  height: 100px;
 	  margin: 5% 0;
@@ -12,7 +16,7 @@
 }
 
 .grow-shrinkbtn {
-	border:3px solid $dark;
+	border:3px solid $colorset2;
 	outline: none;
 	background-color: $light;
 	width: 33%;
@@ -22,7 +26,7 @@
     transition: all .5s ease-out;
 
     &:hover {
-    border-color: $colorset1;
-	background-color: $colorset1;
+    border-color: $colorset2;
+	background-color: $colorset2;
     }
 }

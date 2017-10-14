@@ -51,7 +51,7 @@ gulp.task('browser-sync', ['build'], function() {
 
 	gulp.watch('scss/*.scss', ['compileSass']);
 	gulp.watch('js/*.js', ['build']);
-	gulp.watch('*.html').on('change', browserSync.reload);
+	gulp.watch('templates/*.html', ['fileinclude']).on('change', browserSync.reload);;
 });
 
 // 1. run gulp

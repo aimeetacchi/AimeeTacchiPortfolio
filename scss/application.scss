@@ -7,6 +7,8 @@
 @import 'projects';
 @import 'cv';
 @import 'growdiv';
+@import 'shoppinglist';
+@import 'accordion';
 
 
 /* ==== MOBILE FIRST ===== */
@@ -213,6 +215,7 @@ header,
 				width: 70%;
 				align-self: center;
 				background-color: rgba(255,255,255, 0.6);
+				color: $dark;
 				padding-bottom: 1em;
 				margin: 0 auto;
 
@@ -383,10 +386,11 @@ footer {
 		display:flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: 1em;
 
 		.recent-work-container {
-			flex-basis:49%;
-			margin-bottom: 0;
+			flex-basis:47%;
+			margin-bottom: 0.5em;
 
 			
 		}
@@ -416,10 +420,13 @@ footer {
 	.burger-container {
 		position: fixed;
 		top: 0;
-		box-shadow: none;
 		z-index: 1;
 		width: 100%;
 		height: 60px;
+	}
+
+	.active {
+	box-shadow: 0 1px 3px #EEEEEE;
 	}
 
 	.nav-items {
@@ -475,7 +482,8 @@ footer {
 	}
 
 	.hero {
-		height:30em;
+		height:23em;
+		margin-top: 60px;
 		.hero-content {
 			padding: 4em 2em;
 			width: 80%;

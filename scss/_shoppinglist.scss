@@ -1,0 +1,64 @@
+.shoppingForm {
+	width: 70%;
+	margin: 1em auto 0;
+	display: none;
+	
+	input[type='text'] {
+		padding: 1em;
+		width: 100%;
+		border: none;
+		display: block;
+	} 
+}
+
+#addtolistBtn { 
+	border: none;
+	background-color: $colorset2;
+	padding: 2em 0;
+	color: white;
+	width: 100%;
+	transition: all .2s ease-in;
+	&:hover {
+		background-color: darken($colorset2, 10%);
+	}
+}
+
+#addBtn{
+	@extend #addtolistBtn;
+	margin: 0 auto;
+	display: block;
+	padding: 2em 0;
+	width: 70%;
+}
+
+.shoppingList {
+	background-color: $light;
+	width: 70%;
+	margin: 4em auto 0;
+	text-align: center;
+	img {
+		display: block;
+		margin: 0 auto;
+		padding: .5em 0;
+		width: 50px;
+	}
+	h1, p {
+		padding: .5em 0;
+		color: $dark;
+		margin: 0;
+	}
+	
+	li {
+		list-style: none;
+		padding: .5em 0;
+		color: $light;
+		margin: 0;
+		text-align: center;
+		font-size: 18px;
+		background-color: #004A7C;
+	}
+	
+	li:nth-child(even) {
+		background-color:$colorset2;
+	}
+}
