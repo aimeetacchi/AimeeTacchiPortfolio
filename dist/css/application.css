@@ -1,9 +1,4 @@
-/* -----------------------------------------------------------------------------
- * Variables
- * -------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------
- * Base Styles
- * -------------------------------------------------------------------------- */
+
 * {
   box-sizing: border-box; }
 
@@ -596,7 +591,7 @@ footer {
     display: none !important; }
   /* === HERO CONTAINER === */
   .hero {
-    height: 21em; }
+    height: 32em; }
     .hero .hero-content .fa {
       font-size: 2.5em;
       top: 100%; }
@@ -666,7 +661,7 @@ footer {
   .content-container {
     width: 80%; }
   .hero {
-    height: 23em;
+    height: 28em;
     margin-top: 60px; }
     .hero .hero-content {
       padding: 4em 2em;
