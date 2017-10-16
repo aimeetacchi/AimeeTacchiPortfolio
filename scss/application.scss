@@ -25,8 +25,9 @@
 	h1 {
 		color: $light;
 		font-size: 1.8em;
+		line-height: 1.2;
 		margin: 0;
-		padding: 0 .2em 1em;
+		padding: 0 .2em 0;
 	}
 }
 
@@ -128,10 +129,12 @@ header,
 
 // ====== HERO STYLES ==========
 
+.parallax {
+	background: url("/images/hero.jpg") no-repeat;
+	background-size: cover;
+}
 
 .hero {
-	background-image: url(/images/hero.jpg);
-	background-size: cover;
 	border-bottom: 5px solid $colorset2;
 	height: 35em;
 	
@@ -186,8 +189,6 @@ header,
 
 
 .recent-work {
-	background-color: $colorset1;
-	padding: .5em 1em;
 	border-top-right-radius: 12px;
 	border-top-left-radius: 12px;
 
@@ -376,6 +377,14 @@ footer {
 		padding: 3em;
 	}
 
+
+	.recent-work-title {
+		padding: 1em 3em;
+	}
+	.recent-work {
+		padding: .5em 3em;
+	}
+
 /* -- Containers -- */
 
 	.content-container {
@@ -435,25 +444,26 @@ footer {
 		top: 0;
 		padding: 0;
 		background: none;
-		left: 30%;
+		left: 25%;
 
 		li {
-			margin: 0 .2em;
+			margin: 0.9em .5em;
 			a {
 				color: $colorset2;
-				padding: .3em 3em;
-				border-top-right-radius: 0;
-				border-top-left-radius: 0;
-				border-bottom-right-radius: 15px;
-				border-bottom-left-radius: 15px;
+				padding: .5em 2em;
+				border-top-right-radius: 10px;
+				border-top-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
 				background-color: $light;
-				transition: padding .2s ease-out;
+				transition: all .2s ease-out;
 				font-weight: 700;
 			
 				&:hover {
-					color: $dark;
+					background-color: $dark;
+					color: $light;
 					text-decoration: none;
-					padding: 1.5em 3em;
+
 				}
 
 			}
@@ -482,7 +492,7 @@ footer {
 	}
 
 	.hero {
-		height:28em;
+		height:29em;
 		margin-top: 60px;
 		.hero-content {
 			padding: 4em 2em;
@@ -503,6 +513,12 @@ footer {
 
 	.content-container {
 		width: 60%;
+	}
+
+	.nav-items {
+		li {
+			margin: 0.9em .5em;
+		}
 	}
     
 }

@@ -12,7 +12,8 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen:400,700" rel="stylesheet">
     
 <link href='dist/css/application.css' rel='stylesheet'>
 
@@ -58,7 +59,7 @@
 
   
   
-<div class="hero">
+<div class="hero parallax">
 	<div class="hero-content">
 	<h1 class="heroh1 margin-top-sm margin-bottom-none">Need a Website? I'm Aimee, a Front-end Web Developer</h1>
 	<h2 class="heroh2 margin-top-sm">Building responsive websites</h2>
@@ -104,8 +105,12 @@
 		</div>
 	</div>
 
-	<h3>JavaScript Projects</h3>
-	<p>These are just some small projects to pratice my javascript/jQuery skills. More can be <a href="projects.html"> viewed here</a></p>
+	<div id="recentwork" class="recent-work-title">
+		<h3>JavaScript Projects</h3>
+		<hr>
+		<p>These are just some small projects to pratice my javascript/jQuery skills. More can be <a href="projects.html"> viewed here</a></p>
+	</div>
+
 	<div class="jsprojects">
 		<div class="js-container">
 			<img src="images/jsmovingdiv.jpg" alt="mygrowningdiv">
@@ -153,7 +158,7 @@
               return false;
           });
 
-		 <!-- FIXED HEADER ON SCROLL -->
+		 // FIXED HEADER ON SCROLL 
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 	    	if (scroll > 200 ) {
@@ -163,7 +168,6 @@
 		    	$('.burger-container').removeClass('active');
 		    }
 		});
-
 	</script>
 
 	<!-- JS CODE -->      

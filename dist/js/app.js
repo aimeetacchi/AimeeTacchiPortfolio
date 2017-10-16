@@ -87,7 +87,17 @@ if (listenTwo) {
       mygrowingdiv.style.width = widthsize + "%";
     
   });
-}
+};
+
+// Parallax Slider Home page
+    var parallax = document.querySelector(".parallax"),
+    speed = 0.5;
+
+      window.onscroll = function(){
+        var windowYOffset = window.pageYOffset;
+        var parallaxBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+          parallax.style.backgroundPosition = parallaxBackgrounPos;
+  };
 
 // Shopping List jQuery Script
 
