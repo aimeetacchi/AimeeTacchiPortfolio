@@ -194,7 +194,7 @@ header,
 
 	.recent-work-container {
 		position: relative;
-		margin-bottom: 1em;
+		margin-bottom: 3em;
 
 		img {
 			width: 100%;
@@ -215,7 +215,6 @@ header,
 			.text {
 				width: 70%;
 				align-self: center;
-				background-color: rgba(255,255,255, 0.6);
 				color: $dark;
 				padding-bottom: 1em;
 				margin: 0 auto;
@@ -227,7 +226,7 @@ header,
 					border: 3px solid $colorset2;
 					font-weight: bold;
 					color: $colorset2;
-					margin: 0 auto;
+					margin: 1em auto;
 					padding: 1.2em;
 					width: 70%;
 					&:hover {
@@ -238,7 +237,7 @@ header,
 			}
 
 			&:hover {
-				background: rgba(255,255,255, 0.6);
+				background: rgba(255,255,255, 0.9);
 				opacity: 1;
 			}
 
@@ -396,22 +395,27 @@ footer {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 1em;
-
+		
 		.recent-work-container {
 			flex-basis:47%;
-			margin-bottom: 0.5em;
+			margin-bottom: 1em;
 
-			
-		}
-	}
-
-	.text-container {
-		.text {
-			.button {
-				padding: 1em;
+			.recent-work-description {
+				margin: .2em;
 			}
+
+				.text-container .text {
+					width:100%;
+					padding:0;
+					
+					.button {
+						padding: .5em;
+					}
+				}
 		}
 	}
+
+
 }
 
 /* ==== DESKTOP CODE  860px ===== */

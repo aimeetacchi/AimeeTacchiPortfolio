@@ -490,7 +490,7 @@ header,
   border-top-left-radius: 12px; }
   .recent-work .recent-work-container, .jsprojects .recent-work-container, .jsprojects .js-container {
     position: relative;
-    margin-bottom: 1em; }
+    margin-bottom: 3em; }
     .recent-work .recent-work-container img, .jsprojects .recent-work-container img, .jsprojects .js-container img {
       width: 100%;
       display: block; }
@@ -507,7 +507,6 @@ header,
       .recent-work .recent-work-container .text-container .text, .jsprojects .recent-work-container .text-container .text, .jsprojects .js-container .text-container .text {
         width: 70%;
         align-self: center;
-        background-color: rgba(255, 255, 255, 0.6);
         color: #222831;
         padding-bottom: 1em;
         margin: 0 auto; }
@@ -518,14 +517,14 @@ header,
           border: 3px solid #00ADB5;
           font-weight: bold;
           color: #00ADB5;
-          margin: 0 auto;
+          margin: 1em auto;
           padding: 1.2em;
           width: 70%; }
           .recent-work .recent-work-container .text-container .text .button:hover, .jsprojects .recent-work-container .text-container .text .button:hover, .jsprojects .js-container .text-container .text .button:hover {
             background-color: #00ADB5;
             color: #EEEEEE; }
       .recent-work .recent-work-container .text-container:hover, .jsprojects .recent-work-container .text-container:hover, .jsprojects .js-container .text-container:hover {
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.9);
         opacity: 1; }
 
 .jsprojects {
@@ -618,9 +617,14 @@ footer {
     margin-bottom: 1em; }
     .recent-work .recent-work-container, .jsprojects .recent-work-container, .jsprojects .js-container {
       flex-basis: 47%;
-      margin-bottom: 0.5em; }
-  .text-container .text .button {
-    padding: 1em; } }
+      margin-bottom: 1em; }
+      .recent-work .recent-work-container .recent-work-description, .jsprojects .recent-work-container .recent-work-description, .jsprojects .js-container .recent-work-description {
+        margin: .2em; }
+      .recent-work .recent-work-container .text-container .text, .jsprojects .recent-work-container .text-container .text, .jsprojects .js-container .text-container .text {
+        width: 100%;
+        padding: 0; }
+        .recent-work .recent-work-container .text-container .text .button, .jsprojects .recent-work-container .text-container .text .button, .jsprojects .js-container .text-container .text .button {
+          padding: .5em; } }
 
 /* ==== DESKTOP CODE  860px ===== */
 @media screen and (min-width: 1024px) {

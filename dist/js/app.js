@@ -90,6 +90,7 @@ if (listenTwo) {
 };
 
 // Parallax Slider Home page
+  if(document.querySelector(".parallax")) {
     var parallax = document.querySelector(".parallax"),
     speed = 0.5;
 
@@ -98,6 +99,7 @@ if (listenTwo) {
         var parallaxBackgrounPos = "50% " + (windowYOffset * speed) + "px";
           parallax.style.backgroundPosition = parallaxBackgrounPos;
   };
+};
 
 // Shopping List jQuery Script
 
