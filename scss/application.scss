@@ -195,51 +195,53 @@ header,
 	.recent-work-container {
 		position: relative;
 		margin-bottom: 3em;
+		overflow: hidden;
 
 		img {
-			width: 100%;
-			display:block;
+			display: block;
+    		max-width: 100%;
+    		opacity: 1;
+    		height: auto;
+			transition: .5s ease;
 		}
+
+		&:hover img {
+				transform: scale(1.5);
+				opacity: 0.3;
+			}
+
+		&:hover .text-container {
+			  opacity: 1;
+			}
 
 		.text-container {
 			position: absolute;
-			display:flex;
-			width:100%;
-			height:100%;
-			transition: all .5s ease-out;
-			text-align:center;
+			transition: .5s ease;
+			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
 			opacity: 0;
-			top: 0;
-			left: 0;
+			top: 50%;
+			left: 50%;
+			width: 80%;
+			background-color: $light;
 
 			.text {
 				width: 70%;
-				align-self: center;
 				color: $dark;
 				padding-bottom: 1em;
-				margin: 0 auto;
 
 				.button {
 					display: block;
-					background-color: $light;
+					background-color: $colorset2;
 					transition: all .5s ease-out;
 					border: 3px solid $colorset2;
 					font-weight: bold;
-					color: $colorset2;
+					color: $light;
 					margin: 1em auto;
 					padding: 1.2em;
 					width: 70%;
-					&:hover {
-						background-color: $colorset2;
-						color: $light;
-					}
 				}
-			}
-
-			&:hover {
-				background: rgba(255,255,255, 0.9);
-				opacity: 1;
-			}
+			 }
 
 		}
 	}
@@ -292,7 +294,7 @@ footer {
 		.fa {
 			font-size: 2em;
 			color: $light;
-			padding-left:.3em;
+			padding-right:.3em;
 			transition: all .5s ease-out;
 
 			&:hover {
@@ -330,26 +332,34 @@ footer {
 		background-color: $colorset2;
 		display: flex;
 		margin: 0;
-		padding: .8em .2em .3em;
+		padding: 0;
 		font-size: 1em;
 		width: 100%;
 
 		li {
+			height:35px;
 			margin: 0 .2em;
 			a {
-				color: $colorset2;
-				padding: .8em 4em .3em;
+				color: $light;
+				padding: 0 1em;
 				border-top-right-radius: 15px;
 				border-top-left-radius: 15px;
-				background-color: $light;
+				transition: all .5s ease-out;
 				font-weight: 700;
-			
-				&:hover {
-					color: $dark;
-					text-decoration: underline;
+			}
+
+			a:after {
+					content: "";
+					display: block;
+					width: 0px;
+					margin-left: 10px;
+					border-bottom: 4px solid white;
+					transition: all ease-in .5s;
 				}
 
-			}
+				a:hover:after {
+					width: 80%;
+				}
 		}
 
 	}
@@ -406,10 +416,12 @@ footer {
 
 				.text-container .text {
 					width:100%;
-					padding:0;
+					padding: 1em;
+    				text-align: center;
 					
 					.button {
 						padding: .5em;
+						text-align: center;
 					}
 				}
 		}
@@ -448,29 +460,30 @@ footer {
 		top: 0;
 		padding: 0;
 		background: none;
-		left: 25%;
+		left: 13em;
 
 		li {
-			margin: 0.9em .5em;
+			margin: 1em 0 0;
 			a {
-				color: $colorset2;
-				padding: .5em 2em;
-				border-top-right-radius: 10px;
-				border-top-left-radius: 10px;
-				border-bottom-right-radius: 10px;
-				border-bottom-left-radius: 10px;
-				background-color: $light;
+				color: $light;
+				padding: .5em 1em;
 				transition: all .2s ease-out;
 				font-weight: 700;
 			
 				&:hover {
-					background-color: $dark;
 					color: $light;
 					text-decoration: none;
-
 				}
 
 			}
+
+			a:after {
+					margin-left: 1em;
+				}
+
+				a:hover:after {
+					width: 60%;
+				}
 		}
 
 	}
@@ -479,7 +492,7 @@ footer {
 	.social-media,
 	.contact {
 		position: fixed;
-		z-index: 1;
+		z-index: 3;
 	}
 	.contact {
 		top: 10px;
@@ -518,11 +531,9 @@ footer {
 	.content-container {
 		width: 60%;
 	}
-
-	.nav-items {
-		li {
-			margin: 0.9em .5em;
-		}
+	
+	.contact {
+		margin-right: 1em;
 	}
     
 }
