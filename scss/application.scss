@@ -213,7 +213,8 @@ header,
 		&:hover .text-container {
 			  opacity: 1;
 			}
-
+		
+		// MOBILE -----
 		.text-container {
 			position: absolute;
 			transition: .5s ease;
@@ -222,13 +223,15 @@ header,
 			opacity: 0;
 			top: 50%;
 			left: 50%;
-			width: 80%;
+			width: 70%;
 			background-color: $light;
+			text-align: center;
 
 			.text {
-				width: 70%;
+				width: 100%;
+				text-align: center;
 				color: $dark;
-				padding-bottom: 1em;
+				padding:1em;
 
 				.button {
 					display: block;
@@ -240,6 +243,11 @@ header,
 					margin: 1em auto;
 					padding: 1.2em;
 					width: 70%;
+
+					&:hover {
+						background-color: $colorset1;
+						border: 3px solid $colorset1;
+					}
 				}
 			 }
 
@@ -413,17 +421,19 @@ footer {
 			.recent-work-description {
 				margin: .2em;
 			}
+				// TABLET and higher =====
+				.text-container {
+					width: 90%;
 
-				.text-container .text {
-					width:100%;
-					padding: 1em;
-    				text-align: center;
-					
-					.button {
+						.text {
 						padding: .5em;
-						text-align: center;
+						
+						.button {
+							padding: .5em;
+						}
 					}
 				}
+				
 		}
 	}
 

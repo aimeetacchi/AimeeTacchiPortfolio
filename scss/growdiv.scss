@@ -18,7 +18,8 @@
 .grow-shrinkbtn {
 	border:3px solid $colorset2;
 	outline: none;
-	background-color: $light;
+	background-color: $colorset2;
+	color: $light;
 	width: 33%;
 	text-align: center;
 	padding: 1em;
@@ -26,7 +27,7 @@
     transition: all .5s ease-out;
 
     &:hover {
-    border-color: $colorset2;
-	background-color: $colorset2;
+    border-color: $colorset1;
+	background-color: $colorset1;
     }
 }

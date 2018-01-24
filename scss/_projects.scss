@@ -42,13 +42,13 @@
 
 	.websitebutton {
 		display: block;
-		background-color: $light;
+		background-color: $colorset2;
 		transition: all .5s ease-out;
 		border: 3px solid $colorset2;
 		font-weight: bold;
 		font-size: 1.5em;
 		text-align: center;
-		color: $colorset1;
+		color: $light;
 		margin: 0 auto;
 		padding: 1.2em;
 		width: 70%;
@@ -58,8 +58,8 @@
 		}
 		
 		&:hover {
-			background-color: $colorset2;
-			color: $light;
+			background-color: $colorset1;
+			border: 3px solid $colorset1;
 		}
 
 
