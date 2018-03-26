@@ -105,13 +105,16 @@ hr {
 /*About me Page*/
 .hero-about {
   background-image: url(/images/hero-about.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 5px solid #00ADB5;
   height: 19em;
   /* DESKTOP CODE  768px */ }
   @media screen and (min-width: 1024px) {
     .hero-about {
-      margin-top: 60px; } }
+      margin-top: 60px;
+      background-size: 100%;
+      background-attachment: fixed; } }
 
 .profile-container {
   display: flex;
@@ -152,12 +155,15 @@ hr {
 /*Projects Page*/
 .hero-projects {
   background-image: url(/images/hero-projects.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 15em;
+  border-bottom: 5px solid #00ADB5;
+  height: 19em;
   /* DESKTOP CODE  768px */ }
   @media screen and (min-width: 1024px) {
     .hero-projects {
+      background-size: 100%;
+      background-attachment: fixed;
       margin-top: 60px; } }
 
 .project-image {

@@ -2,13 +2,16 @@
 
 .hero-projects {
 	background-image: url(/images/hero-projects.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	height: 15em;
+	border-bottom: 5px solid $colorset2;
+	height: 19em;
 
 	/* DESKTOP CODE  768px */
 		@media screen and (min-width: $breakpoint-desktop) {
-		margin-top: 60px;
+			background-size: 100%;
+			background-attachment: fixed;
+			margin-top: 60px;
 		}
 }
 

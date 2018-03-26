@@ -1,6 +1,7 @@
 /*About me Page*/
 .hero-about {
 	background-image: url(/images/hero-about.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 5px solid $colorset2;
 	height: 19em;
@@ -8,6 +9,8 @@
 		/* DESKTOP CODE  768px */
 		@media screen and (min-width: $breakpoint-desktop) {
 		margin-top: 60px;
+		background-size: 100%;
+		background-attachment: fixed;
 		}
 
 }
