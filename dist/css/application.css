@@ -108,7 +108,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 5px solid #00ADB5;
-  height: 19em;
+  height: 15em;
   /* DESKTOP CODE  768px */ }
   @media screen and (min-width: 1024px) {
     .hero-about {
