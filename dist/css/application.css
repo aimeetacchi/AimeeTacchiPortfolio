@@ -430,7 +430,7 @@ hr {
 
 .burger-menu.active .menubar {
   background-color: #00ADB5;
-  box-shadow: 0 2px 5px transparent; }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
   .burger-menu.active .menubar:before {
     transform: rotate(45deg);
     top: 0; }
