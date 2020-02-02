@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42038824-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-42038824-1');
+	</script>
+
+	<title>Projects - Designs | Aimee Tacchi</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="description"
+		content="I'm Aimee a Front-end developer from Dunstable, Bedfordshire, UK. Do you need a beautiful stylish responsive website? Then you have come to the right place.">
+	<meta name="keywords" content="Web desgin, Wordpress developer, front-end developer, bedfordshire, hertfordshire, buckinghamshire">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- GOOGLE FONTS -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen:400,700" rel="stylesheet">
+
+	<link href='dist/css/application.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+	<div class="burger-container">
+		<div class="logo">
+			<h1><a href="/">>_ Aimee Tacchi</a></h1>
+		</div>
+
+		<div class="burger-menu">
+			<div class="menubar"></div>
+		</div>
+	</div>
+	<header>
+		<div class="social-media">
+			<a href="http://www.github.com/aimeetacchi" target="_blank"><i class="fa fa-github"
+					aria-hidden="true"></i></a>
+			<a href="http://codepen.io/aimeetacchi/" target="_blank"><i class="fa fa-codepen"
+					aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/aimeetacchi/" target="_blank"><i class="fa fa-linkedin-square"
+					aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/AimeesWebDesign/" target="_blank"><i class="fa fa-facebook-square"
+					aria-hidden="true"></i></a>
+		</div>
+
+		<div class="contact">
+			<a href="mailto:aimeetacchi@hotmail.co.uk?Subject=Hello" target="_top">Email me: <i class="fa fa-envelope-o"
+					aria-hidden="true"></i></a>
+		</div>
+
+	</header>
+
+	<nav>
+		<ul class="nav-itemsMobile">
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+		</ul>
+		<ul class="nav-items">
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+		</ul>
+	</nav>  
+ <div class="hero-projects">
+</div>
+
+<div class="content-container flex">
+	<div class="project-image margin-bottom-sm">
+		<img src="images/design-example3.jpg" alt="design for Handyman Services">
+	</div>
+	<div class="project-content">
+		<h1>Design Example 3</h1>
+		<p>Simple clean design for Handyman Services.</p>
+		<p><i class="fa fa-check" aria-hidden="true"></i> Design: Sketch</p>
+		
+	</div>
+</div>
+ <footer>
+   <p>Web site designed and developed by Aimee Tacchi &copy; <script> document.write(new Date().getFullYear())</script> All rights reserved</p>
+</footer>
+	<!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+	<script>
+		$(".burger-menu").click(function(){
+				$(this).toggleClass('active');
+			 	$(".nav-itemsMobile").toggle();
+		});
+
+		//Scroll smooth on a tag links.
+		 $('.scrolltoRW').click(function () {
+              var aTag = $(this).attr('href');
+              $('html,body').animate({
+                  scrollTop: $(aTag).offset().top
+              }, 600);
+              return false;
+          });
+
+		 // FIXED HEADER ON SCROLL 
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+	    	if (scroll > 200 ) {
+	    		$('.burger-container').addClass('active');
+
+		    } else {
+		    	$('.burger-container').removeClass('active');
+		    }
+		});
+	</script>
+
+	<!-- JS CODE -->      
+    <script src="dist/js/app.js"></script>
+</body>
+</html>
